@@ -3,10 +3,10 @@ const Pool = require('pg').Pool;
 const cors = require('cors');
 
 const pool = new Pool({
-    user: 'galnhjufhoujkn',
-    password: '627aa7c1a4ca013797436c82eb2b7f3b61f72ee277bdf56d141bcfe657914389',
-    host: 'ec2-34-234-228-127.compute-1.amazonaws.com',
-    database: 'd4pmpu713okcpc',
+    user: 'cwotifzgyfrydo',
+    password: '7561f9d2e8b0858c4e7dc6daaf0d44ae4864d3f8a02fffd4e10a0a0b8a93bb14',
+    host: 'ec2-3-215-83-17.compute-1.amazonaws.com',
+    database: 'db9s29bmk4jiqb',
     port: 5432,
     ssl:  { rejectUnauthorized: false }
 });
