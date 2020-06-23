@@ -31,8 +31,8 @@ server.get('/agenda/:id',async function(request, response){
 
 
 server.post('/agenda', async function(request, response) {
-    const chamado = request.body.compromisso; 
-    const descricao = request.body.data;
+    const compromisso = request.body.compromisso; 
+    const data = request.body.data;
     const sql = `INSERT INTO agenda (compromisso, data, realizado) VALUES ($1, $2, $3)`;
     await pool.query(sql, [compromisso, data, false]);
     return response.status(204).send(); 
