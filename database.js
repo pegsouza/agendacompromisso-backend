@@ -48,7 +48,7 @@ pool.query(sql_insert, function(error, result) {
 
 // SELECT
 
-// const sql_select = `SELECT * FROM tarefas`;
+// const sql_select = `SELECT * FROM agenda`;
 
 // pool.query(sql_select, function(error, result) { 
 //     if(error)
