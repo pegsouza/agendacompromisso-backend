@@ -16,11 +16,12 @@ const pool = new Pool({
 });
 
 // const sql = `
-//     CREATE TABLE IF NOT EXISTS tarefas
+//     CREATE TABLE IF NOT EXISTS agenda
 //     (
 //         ID serial primary key,
-//         name varchar(200) not null,
-//         done boolean
+//         compromisso varchar(200) not null,
+//         data varchar(50),
+//         realizado boolean
 //     )
 // `;
 
@@ -34,8 +35,8 @@ const pool = new Pool({
 
 // INSERT
 const sql_insert = `
-        INSERT INTO tarefas (name, done) 
-            VALUES ('Assistir La Casa de Papel', true)
+        INSERT INTO agenda (compromisso, data, realizado) 
+            VALUES ('Viajar Muito', '2020-05-10' true)
 `;
 
 pool.query(sql_insert, function(error, result) {
